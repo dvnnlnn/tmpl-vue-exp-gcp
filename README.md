@@ -1,4 +1,4 @@
-# template-vue-express-gcp
+# tmpl-vue-exp-gcp
 A full stack template for Google Cloud Platform App Engine, featuring:
 - Vue (Vue Router, Vuex)
 - Node.js (Express)
