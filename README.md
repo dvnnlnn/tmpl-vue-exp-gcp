@@ -34,7 +34,7 @@ It will start:
 - A watcher to build front-end files in real-time.
 - A node.js express back-end server at port 8888.
 
-Which is equal to running *npm run serve*, *npm run build*, and *npm run mount* at the same time.
+which is equal to running *npm run serve*, *npm run build*, and *npm run mount* at the same time.
 
 ---
 ## Start Deployment
