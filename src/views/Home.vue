@@ -1,16 +1,20 @@
 <template>
   <div class="home">
-    <button @click="getData">Get Data</button>
+    <NormalButton @click="getData">Get Data</NormalButton>
   </div>
 </template>
 
 <script>
 import getData from '@/actions/getData';
+import NormalButton from '@/components/NormalButton.vue';
 
 export default {
   name: 'Home',
   methods: {
     getData,
+  },
+  components: {
+    NormalButton,
   },
 };
 </script>
