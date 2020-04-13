@@ -8,7 +8,7 @@
     "build-pwa": "vue-cli-service build --mode pwaProduction --watch",
     "lint": "vue-cli-service lint",
     "start": "node index.js",
-    "mount": "nodemon index.js",
+    "mount": "nodemon --ignore src/ --ignore public/ --ignore dist/ index.js",
     "dev": "concurrently \"npm run mount\" \"npm run serve\" \"npm run build\"",
     "deploy": "gcloud app deploy"
   },

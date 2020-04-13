@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 const Home = () => import('../views/Home.vue');
-const User = () => import('../views/User.vue');
+const About = () => import('../views/About.vue');
 
 Vue.use(VueRouter);
 
@@ -14,9 +14,9 @@ const router = new VueRouter({
       component: Home,
     },
     {
-      path: '/user',
-      name: 'user',
-      component: User,
+      path: '/about',
+      name: 'about',
+      component: About,
     },
     {
       path: '*',
