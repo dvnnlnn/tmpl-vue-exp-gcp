@@ -5,13 +5,13 @@ const { setRouters } = require('./server/router');
 const { writeLog } = require('./server/log');
 
 // urls & port
-const expPort = 8888;
+const serverPort = 8888;
 
 // init express
 const app = express();
 
 // set port
-app.set('port', (process.env.PORT || expPort));
+app.set('port', (process.env.PORT || serverPort));
 
 // static files
 app.use(express.static(`${__dirname}/dist`, { maxAge: 0 }))

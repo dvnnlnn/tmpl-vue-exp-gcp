@@ -5,22 +5,22 @@ import router from './router';
 import store from './store';
 
 // ports
-const vuePort = 3000;
-const expPort = 8888;
-const expUrl = `http://localhost:${expPort}`;
+const clientPort = 3000;
+const serverPort = 8888;
+const serverUrl = `http://localhost:${serverPort}`;
 
 // before enter
 const { href } = window.location;
-if (href.match(expUrl)) {
-  // redirect node to vue
-  window.location.href = href.replace(expPort, vuePort);
+if (href.match(serverUrl)) {
+  // redirect to client port
+  window.location.href = href.replace(
+    serverPort, clientPort,
+  );
 } else {
-  // vue setting
+  // global variable
+  window.inDev = (process.env.NODE_ENV === 'development');
+  // vue config
   Vue.config.productionTip = false;
-  Vue.prototype.$inDev = (process.env.NODE_ENV === 'development');
-  Vue.prototype.$vuePort = vuePort;
-  Vue.prototype.$expPort = expPort;
-  Vue.prototype.$expUrl = expUrl;
   // vue init
   new Vue({
     router,

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import getData from '@/functions/getData';
+import getData from '@/actions/getData';
 
 export default {
   name: 'Home',
