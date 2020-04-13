@@ -11,11 +11,11 @@ import NormalButton from '@/components/NormalButton.vue';
 export default {
   name: 'Home',
   methods: {
-    getData,
+    getData
   },
   components: {
-    NormalButton,
-  },
+    NormalButton
+  }
 };
 </script>
 

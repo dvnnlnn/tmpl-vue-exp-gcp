@@ -2,7 +2,8 @@
 A full stack template for Google Cloud Platform App Engine, featuring:
 - Vue (Vue Router, Vuex)
 - Node.js (Express)
-- Babel, Sass/SCSS, Eslint (with Vue CLI)
+- Babel, Sass/SCSS (with Vue CLI)
+- Eslint, Prettier
 - PWA support
 - GCP Logging API
 
@@ -59,11 +60,6 @@ npm run build
 ### Vue.js - Build for PWA production
 ```
 npm run build-pwa
-```
-
-### Vue.js - Lints and fixes files
-```
-npm run lint
 ```
 
 ### Express - Start server with node.js

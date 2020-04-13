@@ -6,11 +6,13 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build --mode production --skip-plugins pwa --watch",
     "build-pwa": "vue-cli-service build --mode pwaProduction --watch",
-    "lint": "vue-cli-service lint",
     "start": "node index.js",
     "mount": "nodemon --ignore src/ --ignore public/ --ignore dist/ index.js",
     "dev": "concurrently \"npm run mount\" \"npm run serve\" \"npm run build\"",
     "deploy": "gcloud app deploy"
+  },
+  "prettier": {
+    "singleQuote": true
   },
   "dependencies": {
     "@google-cloud/logging": "^7.3.0",
@@ -18,6 +20,8 @@
     "cookie-parser": "^1.4.5",
     "core-js": "^3.6.4",
     "cors": "^2.8.4",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.3",
     "express": "^4.17.1",
     "querystring": "~0.2.0",
     "register-service-worker": "^1.7.1",
@@ -28,17 +32,12 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
-    "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-pwa": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-plugin-vuex": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "babel-eslint": "^10.0.3",
     "concurrently": "^5.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
     "nodemon": "^2.0.2",
     "sass": "^1.25.0",
