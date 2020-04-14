@@ -11,6 +11,7 @@
 # from your .gitignore file, remove the corresponding line
 # below:
 .git
+.gitattributes
 .gitignore
 
 # Node.js dependencies:
@@ -26,3 +27,4 @@ src/
 .eslintrc.js
 babel.config.js
 vue.config.js
+README.md

@@ -9,13 +9,14 @@ const clientPort = 3000;
 const serverPort = 8888;
 const serverUrl = `http://localhost:${serverPort}`;
 
+// global variables
+window.inDev = process.env.NODE_ENV === 'development';
+
 // before enter
 const { href } = window.location;
-if (href.match(serverUrl)) {
+if (window.inDev && href.match(serverUrl)) {
   // redirect to client port
-  window.location.href = href.replace(
-    serverPort, clientPort,
-  );
+  window.location.href = href.replace(serverPort, clientPort);
 } else {
   // global variable
   window.inDev = (process.env.NODE_ENV === 'development');
