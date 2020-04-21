@@ -12,7 +12,8 @@
     "deploy": "gcloud app deploy"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 100
   },
   "dependencies": {
     "@google-cloud/logging": "^7.3.0",
