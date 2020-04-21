@@ -1,9 +1,13 @@
 # tmpl-vue-exp-gcp
 A full stack template for Google Cloud Platform App Engine, featuring:
-- Vue (Vue Router, Vuex)
-- Node.js (Express)
-- Babel, Sass/SCSS (with Vue CLI)
-- Eslint, Prettier
+- Vue
+- Vue Router
+- Vuex
+- Express (Node.js)
+- Babel
+- Sass/SCSS
+- Eslint
+- Prettier
 - PWA support
 - GCP Logging API
 
@@ -74,5 +78,5 @@ npm run mount
 
 ---
 
-### References
-- [Vue Configuration Reference](https://cli.vuejs.org/config/).
+## References
+- [Vue Configuration Reference](https://cli.vuejs.org/config/)
